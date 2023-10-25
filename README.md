@@ -30,12 +30,12 @@
 
 - [x] Add a rule for checking styles using flake8
 
-- [ ] Add a rule for fixing styles using autopep8
+- [x] Add a rule for fixing styles using autopep8
 
 - [x] Add a rule for checking types with mypy
 
 - [x] Add a rule to submit problem to Kattis using Kattis CLI
 
-- [ ] Run make all to make sure all the checks and tests pass. Create screenshot of the final report of make all rule execution.
+- [x] Run make all to make sure all the checks and tests pass. Create screenshot of the final report of make all rule execution.
 
-- [ ] Submit your solution to Kattis using Makefile and create screenshot of Accepted verdict result on your terminal.
+- [x] Submit your solution to Kattis using Makefile and create screenshot of Accepted verdict result on your terminal.
