@@ -6,7 +6,7 @@ def average(numOfT: int, temps: List[int]) -> int:
     sum = 0
     for i in temps:
         sum += i
-    avg = sum/int(numOfT)
+    avg = sum / int(numOfT)
     return int(avg)
 
 
