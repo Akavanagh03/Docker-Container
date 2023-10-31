@@ -6,7 +6,7 @@ STYLE_FIX = autopep8 --in-place --recursive --aggressive --aggressive
 KATTIS = python3 kattis-cli/submit.py 
 
 .PHONY: all
-all: style-fix style-check type-check unittest localtest kattis clean
+all: style-fix style-check type-check unittest localtest clean
 
 .PHONY: style-fix
 style-fix:
@@ -32,7 +32,7 @@ kattis:
 	$(KATTIS) CosmicPathOptimization/CosmicPathOptimization.py
 
 localtest:
-	@cat examples/1.in | python3 CosmicPathOptimization/CosmicPathOptimization.py | diff - examples/1.ans
+	@cat ./examples/1.in | python3 ./CosmicPathOptimization/CosmicPathOptimization.py | diff - ./examples/1.ans
 	@echo "Local Kattis Testing Complete."
 
 .PHONY: clean
@@ -42,11 +42,5 @@ clean:
 	rm -rf .mypy_cache
 	rm -rf .hypothesis
 
-
 .PHONY: push
 push: run-test clean
-	
-
-.PHONY: fix-style
-fix-style:
-	$(STYLE_FIX) PROGRAM
